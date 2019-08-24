@@ -2,9 +2,7 @@ import sayHello from "./app.js";
 import "./style.css";
 import _ from "lodash";
 
-const person = {
-  name: "Gustavo",
-};
+const person = undefined;
 
 const user = {
   admin: true,
@@ -12,4 +10,4 @@ const user = {
 
 const currentUser = _.merge(person, user);
 
-console.log(sayHello(currentUser.name));
+console.log(sayHello(person?.name));
